@@ -1,7 +1,7 @@
 {
-  "name": "Taste House QR Menu",
-  "short_name": "Taste House",
-  "description": "Mobile QR menu for Taste House shawarma restaurant.",
+  "name": "Shawarma Khazen QR Menu",
+  "short_name": "Shawarma Khazen",
+  "description": "Mobile QR menu for Shawarma Khazen shawarma restaurant.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

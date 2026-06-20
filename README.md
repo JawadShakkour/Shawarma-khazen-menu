@@ -1,4 +1,4 @@
-# Taste House QR Menu
+# Shawarma Khazen QR Menu
 
 A simple mobile-first restaurant QR menu for a shawarma restaurant. This is a first test version with sample items and placeholder online images. Real menu items, food photos, prices, logo, colors, and contact details can be added later.
 
