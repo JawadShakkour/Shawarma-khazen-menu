@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste House QR Code</title>
+    <style>
+      :root {
+        --primary-color: #b23a2b;
+        --background-color: #fffaf5;
+        --surface-color: #ffffff;
+        --text-color: #222222;
+        --muted-text-color: #666666;
+        --border-color: #dddddd;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        align-items: center;
+        background: var(--background-color);
+        color: var(--text-color);
+        display: grid;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        padding: 1.25rem;
+        text-align: center;
+      }
+
+      main {
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        box-shadow: 0 14px 32px rgba(47, 35, 24, 0.12);
+        margin: auto;
+        max-width: 440px;
+        padding: 1.5rem;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin: 0 0 0.5rem;
+      }
+
+      p {
+        color: var(--muted-text-color);
+        margin: 0 0 1rem;
+      }
+
+      img {
+        border: 8px solid white;
+        display: block;
+        height: auto;
+        margin: 1rem auto;
+        max-width: 320px;
+        width: 100%;
+      }
+
+      a {
+        color: var(--primary-color);
+        font-weight: 800;
+        overflow-wrap: anywhere;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Taste House QR Menu</h1>
+      <p>Scan this code while your phone is on the same Wi-Fi as this computer.</p>
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=http%3A%2F%2F192.168.39.137%3A8080"
+        alt="QR code for Taste House menu at http://192.168.39.137:8080"
+      />
+      <p><a href="http://192.168.39.137:8080">http://192.168.39.137:8080</a></p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Taste House QR menu with shawarma, plates, sides, desserts, and drinks."
+    />
+    <meta name="theme-color" content="#b23a2b" />
+    <title>Taste House | QR Menu</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Restaurant tools">
+        <a class="brand-mark" href="#menu" aria-label="Taste House menu home">
+          <span class="logo" aria-hidden="true">TH</span>
+          <span>Taste House</span>
+        </a>
+        <button class="language-button" type="button" aria-label="Language selector placeholder">
+          EN
+        </button>
+      </nav>
+
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Fresh shawarma, grilled daily</p>
+          <h1 id="page-title">Taste House</h1>
+          <p>
+            Fresh food, great taste, and a menu made for everyone. Browse our
+            sample QR menu now, and we can replace everything with your real
+            food, photos, and prices later.
+          </p>
+          <p class="hours">Open today: 11:00 - 23:00</p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="menu-shell" id="menu" aria-labelledby="menu-title">
+        <div class="menu-heading">
+          <div>
+            <p class="eyebrow">QR Menu</p>
+            <h2 id="menu-title">Menu</h2>
+          </div>
+          <div class="search-wrap">
+            <label for="searchInput">Search menu</label>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search shawarma, drinks..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <div class="category-bar" aria-label="Menu categories" id="categoryBar"></div>
+
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+        <div class="menu-grid" id="menuGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <h3>No menu items found.</h3>
+          <p>Try another search or choose a different category.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>Taste House</strong>
+      <span>Phone: +000 000 0000</span>
+      <span>Address: Restaurant address</span>
+      <span>Instagram: @tastehouse</span>
+      <span>&copy; 2026 Taste House. All rights reserved.</span>
+    </footer>
+
+    <div class="modal-backdrop" id="modalBackdrop" hidden>
+      <article
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+        tabindex="-1"
+      >
+        <button class="close-button" id="closeModal" type="button" aria-label="Close item details">
+          &times;
+        </button>
+        <img id="modalImage" src="" alt="" />
+        <div class="modal-content">
+          <span class="pill" id="modalCategory"></span>
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <div class="modal-meta">
+            <strong id="modalPrice"></strong>
+            <span id="modalBadge"></span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <script src="data/menu.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
