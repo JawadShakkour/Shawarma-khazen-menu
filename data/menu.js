@@ -16,7 +16,7 @@ const menuItems = [
       ar: "بيتا طازجة محشوة بشاورما عجل، سلطات وإضافات حسب الاختيار.",
       en: "Fresh pita filled with veal shawarma, salads, and toppings of your choice.",
     },
-    price: null,
+    price: 55,
     currency: "₪",
     categoryKey: "normalDishes",
     category: {
