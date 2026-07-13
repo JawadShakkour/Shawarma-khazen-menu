@@ -177,7 +177,7 @@ function renderMenu() {
   menuGrid.innerHTML = items
     .map(
       (item) => `
-        <button class="menu-card" type="button" data-id="${item.id}" aria-label="${uiText[state.language].viewItem}: ${translate(item.name)}">
+        <button class="menu-card category-${item.categoryKey}" type="button" data-id="${item.id}" aria-label="${uiText[state.language].viewItem}: ${translate(item.name)}">
           <img src="${item.image}" alt="${translate(item.name)}" loading="lazy" />
           <span class="card-body">
             <span class="card-topline">
