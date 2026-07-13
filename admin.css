@@ -1,0 +1,124 @@
+.admin-shell {
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 2rem var(--space) 4rem;
+}
+
+.admin-panel {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: clamp(1rem, 4vw, 2rem);
+}
+
+.admin-heading {
+  align-items: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.admin-heading h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+.admin-link {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.admin-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-form fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.admin-form legend {
+  color: var(--primary-dark);
+  font-weight: 900;
+  padding: 0 0.35rem;
+}
+
+.admin-form label {
+  color: var(--muted-text-color);
+  display: grid;
+  font-size: 0.92rem;
+  font-weight: 800;
+  gap: 0.35rem;
+}
+
+.admin-form input,
+.admin-form select {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  color: var(--text-color);
+  min-height: 46px;
+  padding: 0 0.8rem;
+}
+
+.checkbox-row {
+  align-items: center;
+  display: flex !important;
+  gap: 0.55rem !important;
+}
+
+.checkbox-row input {
+  min-height: auto;
+}
+
+.category-new {
+  display: grid;
+  gap: 1rem;
+}
+
+.category-new p {
+  color: var(--muted-text-color);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.admin-submit {
+  background: var(--primary-color);
+  border: 0;
+  border-radius: var(--radius);
+  color: white;
+  font-weight: 900;
+  min-height: 52px;
+  padding: 0 1rem;
+}
+
+.admin-submit:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.admin-status {
+  color: var(--muted-text-color);
+  font-weight: 800;
+  min-height: 1.5rem;
+}
+
+.admin-status.success {
+  color: var(--success-color);
+}
+
+.admin-status.error {
+  color: var(--primary-dark);
+}
+
+@media (max-width: 720px) {
+  .admin-heading {
+    display: grid;
+  }
+}

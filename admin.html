@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>ניהול תפריט | Shawarma Khazen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="admin-panel" aria-labelledby="adminTitle">
+        <div class="admin-heading">
+          <div>
+            <p class="eyebrow">Shawarma Khazen</p>
+            <h1 id="adminTitle">הוספת מנה לתפריט</h1>
+          </div>
+          <a class="admin-link" href="index.html">חזרה לתפריט</a>
+        </div>
+
+        <form id="dishForm" class="admin-form">
+          <fieldset>
+            <legend>GitHub access</legend>
+            <label>
+              GitHub token
+              <input
+                id="githubToken"
+                type="password"
+                autocomplete="off"
+                placeholder="Paste token with repository contents access"
+                required
+              />
+            </label>
+            <label class="checkbox-row">
+              <input id="rememberToken" type="checkbox" />
+              Remember token on this browser
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dish names</legend>
+            <label>
+              Hebrew name
+              <input id="nameHe" type="text" dir="rtl" required />
+            </label>
+            <label>
+              Arabic name
+              <input id="nameAr" type="text" dir="rtl" required />
+            </label>
+            <label>
+              English name
+              <input id="nameEn" type="text" dir="ltr" required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Price and image</legend>
+            <label>
+              Price
+              <input id="price" type="number" min="0" step="1" inputmode="numeric" required />
+            </label>
+            <label>
+              Dish image
+              <input id="imageFile" type="file" accept="image/*" required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Category</legend>
+            <label>
+              Choose existing category
+              <select id="categorySelect"></select>
+            </label>
+            <div class="category-new">
+              <p>Or create a new category</p>
+              <label>
+                Hebrew category
+                <input id="categoryHe" type="text" dir="rtl" />
+              </label>
+              <label>
+                Arabic category
+                <input id="categoryAr" type="text" dir="rtl" />
+              </label>
+              <label>
+                English category
+                <input id="categoryEn" type="text" dir="ltr" />
+              </label>
+            </div>
+          </fieldset>
+
+          <button class="admin-submit" type="submit">Add dish and deploy</button>
+          <p class="admin-status" id="adminStatus" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

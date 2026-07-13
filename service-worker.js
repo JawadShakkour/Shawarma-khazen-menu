@@ -1,9 +1,12 @@
-const CACHE_NAME = "shawarma-khazen-menu-v5";
+const CACHE_NAME = "shawarma-khazen-menu-v6";
 const CORE_ASSETS = [
   "./",
   "./index.html",
   "./style.css",
   "./script.js",
+  "./admin.html",
+  "./admin.css",
+  "./admin.js",
   "./data/menu.js",
   "./images/veal-shawarma-pita.png",
   "./images/veal-shawarma-baguette.png",
