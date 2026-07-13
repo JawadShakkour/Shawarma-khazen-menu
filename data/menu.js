@@ -208,5 +208,40 @@ const menuItems = [
     "available": true,
     "vegetarian": false,
     "spicy": false
+  },
+  {
+    "id": 7,
+    "name": {
+      "he": "פיתה שווארמה כבש",
+      "ar": "يتا شاورما خروف",
+      "en": "Lamb Shawarma Pita"
+    },
+    "description": {
+      "he": "פיתה שווארמה כבש",
+      "ar": "يتا شاورما خروف",
+      "en": "Lamb Shawarma Pita"
+    },
+    "fullDescription": {
+      "he": "פיתה שווארמה כבש",
+      "ar": "يتا شاورما خروف",
+      "en": "Lamb Shawarma Pita"
+    },
+    "price": 75,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/lamb-shawarma-pita-1783951937560.jpeg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
   }
 ];
