@@ -173,5 +173,40 @@ const menuItems = [
     "available": true,
     "vegetarian": false,
     "spicy": false
+  },
+  {
+    "id": 6,
+    "name": {
+      "he": "לאפה שווארמה הודו",
+      "ar": "لفة شاورما حبش",
+      "en": "Turkey Shawarma Laffa"
+    },
+    "description": {
+      "he": "לאפה שווארמה הודו",
+      "ar": "لفة شاورما حبش",
+      "en": "Turkey Shawarma Laffa"
+    },
+    "fullDescription": {
+      "he": "לאפה שווארמה הודו",
+      "ar": "لفة شاورما حبش",
+      "en": "Turkey Shawarma Laffa"
+    },
+    "price": 60,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/turkey-shawarma-laffa-1783951617478.jpeg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
   }
 ];
