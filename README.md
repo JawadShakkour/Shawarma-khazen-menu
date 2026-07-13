@@ -43,6 +43,6 @@ If you need the first scan to work with no internet at all, the restaurant must 
 
 Open `/admin.html` on the live site to add menu items from the browser.
 
-The admin page needs a GitHub token with read/write access to repository contents. When you add a dish, it uploads the image to `images/`, updates `data/menu.js`, commits to GitHub, and Netlify deploys automatically.
+The admin page needs a GitHub token with read/write access to repository contents. Pressing **Add to pending list** only saves the dish on the admin screen. Pressing **Push changes** uploads the image to `images/`, updates `data/menu.js`, commits to GitHub, and Netlify deploys automatically.
 
 Do not share the GitHub token with customers or staff who should not be able to edit the menu.

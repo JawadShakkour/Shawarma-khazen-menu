@@ -88,7 +88,14 @@
   margin-bottom: 0;
 }
 
-.admin-submit {
+.admin-actions {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.admin-submit,
+.admin-push {
   background: var(--primary-color);
   border: 0;
   border-radius: var(--radius);
@@ -98,9 +105,60 @@
   padding: 0 1rem;
 }
 
-.admin-submit:disabled {
+.admin-push {
+  background: var(--success-color);
+}
+
+.admin-submit:disabled,
+.admin-push:disabled {
   cursor: wait;
   opacity: 0.65;
+}
+
+.pending-panel {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.pending-panel h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.pending-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.pending-list p {
+  color: var(--muted-text-color);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.pending-item {
+  align-items: center;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr auto auto;
+  padding: 0.75rem;
+}
+
+.pending-item small {
+  color: var(--muted-text-color);
+  display: block;
+}
+
+.pending-item button {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  min-height: 38px;
+  padding: 0 0.75rem;
 }
 
 .admin-status {
@@ -120,5 +178,10 @@
 @media (max-width: 720px) {
   .admin-heading {
     display: grid;
+  }
+
+  .admin-actions,
+  .pending-item {
+    grid-template-columns: 1fr;
   }
 }

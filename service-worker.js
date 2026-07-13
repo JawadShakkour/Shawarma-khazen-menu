@@ -1,4 +1,4 @@
-const CACHE_NAME = "shawarma-khazen-menu-v6";
+const CACHE_NAME = "shawarma-khazen-menu-v7";
 const CORE_ASSETS = [
   "./",
   "./index.html",

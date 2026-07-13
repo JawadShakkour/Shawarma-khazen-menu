@@ -29,7 +29,6 @@
                 type="password"
                 autocomplete="off"
                 placeholder="Paste token with repository contents access"
-                required
               />
             </label>
             <label class="checkbox-row">
@@ -89,12 +88,20 @@
             </div>
           </fieldset>
 
-          <button class="admin-submit" type="submit">Add dish and deploy</button>
+          <div class="admin-actions">
+            <button class="admin-submit" type="submit">Add to pending list</button>
+            <button class="admin-push" id="pushButton" type="button">Push changes</button>
+          </div>
+          <section class="pending-panel" aria-labelledby="pendingTitle">
+            <h2 id="pendingTitle">Pending dishes</h2>
+            <div class="pending-list" id="pendingList"></div>
+          </section>
           <p class="admin-status" id="adminStatus" role="status"></p>
         </form>
       </section>
     </main>
 
+    <script src="data/menu.js"></script>
     <script src="admin.js"></script>
   </body>
 </html>
