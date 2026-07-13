@@ -103,5 +103,40 @@ const menuItems = [
     "available": true,
     "vegetarian": false,
     "spicy": false
+  },
+  {
+    "id": 4,
+    "name": {
+      "he": "פיתה שווארמה הודו",
+      "ar": "بيتا شاورما حبش",
+      "en": "Turkey Shawarma Pita"
+    },
+    "description": {
+      "he": "פיתה שווארמה הודו",
+      "ar": "بيتا شاورما حبش",
+      "en": "Turkey Shawarma Pita"
+    },
+    "fullDescription": {
+      "he": "פיתה שווארמה הודו",
+      "ar": "بيتا شاورما حبش",
+      "en": "Turkey Shawarma Pita"
+    },
+    "price": 55,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/turkey-shawarma-pita-1783951366642.jpeg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
   }
 ];
