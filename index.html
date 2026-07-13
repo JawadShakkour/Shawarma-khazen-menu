@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
@@ -17,14 +17,14 @@
       <nav class="topbar" aria-label="Restaurant tools">
         <a class="brand-mark" href="#menu" aria-label="Shawarma Khazen menu home">
           <span class="logo" aria-hidden="true">SK</span>
-          <span>Shawarma Khazen</span>
+          <span data-restaurant-name>Shawarma Khazen</span>
         </a>
         <div class="language-switcher" aria-label="Language selector">
           <button class="language-button" type="button" data-language="he" aria-pressed="true">
-            עברית
+            HE
           </button>
           <button class="language-button" type="button" data-language="ar" aria-pressed="false">
-            عربي
+            AR
           </button>
           <button class="language-button" type="button" data-language="en" aria-pressed="false">
             EN
@@ -34,12 +34,11 @@
 
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="heroEyebrow">שווארמה טרייה על האש</p>
-          <h1 id="page-title">Shawarma Khazen</h1>
+          <p class="eyebrow" data-i18n="heroEyebrow">׳©׳•׳•׳׳¨׳׳” ׳˜׳¨׳™׳™׳” ׳¢׳ ׳”׳׳©</p>
+          <h1 id="page-title" data-restaurant-name>Shawarma Khazen</h1>
           <p data-i18n="heroDescription">
-            תפריט דיגיטלי לשווארמה חאזן עם מנות טריות, תמונות ומחירים.
+            ׳×׳₪׳¨׳™׳˜ ׳“׳™׳’׳™׳˜׳׳™ ׳׳©׳•׳•׳׳¨׳׳” ׳—׳׳–׳ ׳¢׳ ׳׳ ׳•׳× ׳˜׳¨׳™׳•׳×, ׳×׳׳•׳ ׳•׳× ׳•׳׳—׳™׳¨׳™׳.
           </p>
-          <p class="hours" data-i18n="hours">פתוח היום: 11:00 - 23:00</p>
         </div>
       </section>
     </header>
@@ -48,15 +47,15 @@
       <section class="menu-shell" id="menu" aria-labelledby="menu-title">
         <div class="menu-heading">
           <div>
-            <p class="eyebrow" data-i18n="menuEyebrow">תפריט QR</p>
-            <h2 id="menu-title" data-i18n="menuTitle">תפריט</h2>
+            <p class="eyebrow" data-i18n="menuEyebrow">׳×׳₪׳¨׳™׳˜ QR</p>
+            <h2 id="menu-title" data-i18n="menuTitle">׳×׳₪׳¨׳™׳˜</h2>
           </div>
           <div class="search-wrap">
-            <label for="searchInput" data-i18n="searchLabel">חיפוש בתפריט</label>
+            <label for="searchInput" data-i18n="searchLabel">׳—׳™׳₪׳•׳© ׳‘׳×׳₪׳¨׳™׳˜</label>
             <input
               id="searchInput"
               type="search"
-              placeholder="חפש שווארמה, שתייה..."
+              placeholder="׳—׳₪׳© ׳©׳•׳•׳׳¨׳׳”, ׳©׳×׳™׳™׳”..."
               autocomplete="off"
             />
           </div>
@@ -67,18 +66,17 @@
         <p class="result-count" id="resultCount" aria-live="polite"></p>
         <div class="menu-grid" id="menuGrid"></div>
         <div class="empty-state" id="emptyState" hidden>
-          <h3 data-i18n="emptyTitle">לא נמצאו מנות.</h3>
-          <p data-i18n="emptyText">נסה חיפוש אחר או בחר קטגוריה אחרת.</p>
+          <h3 data-i18n="emptyTitle">׳׳ ׳ ׳׳¦׳׳• ׳׳ ׳•׳×.</h3>
+          <p data-i18n="emptyText">׳ ׳¡׳” ׳—׳™׳₪׳•׳© ׳׳—׳¨ ׳׳• ׳‘׳—׳¨ ׳§׳˜׳’׳•׳¨׳™׳” ׳׳—׳¨׳×.</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <strong>Shawarma Khazen</strong>
-      <span data-i18n="footerPhone">טלפון: +000 000 0000</span>
-      <span data-i18n="footerAddress">כתובת: כתובת המסעדה</span>
-      <span>Instagram: @shawarmakhazen</span>
-      <span data-i18n="footerCopyright">&copy; 2026 Shawarma Khazen. כל הזכויות שמורות.</span>
+      <strong data-restaurant-name>Shawarma Khazen</strong>
+      <span data-i18n="footerPhone">Phone: 049555237</span>
+      <span>Instagram: @shawrma.khazen</span>
+      <span data-i18n="footerCopyright">&copy; 2026 Shawarma Khazen. ׳›׳ ׳”׳–׳›׳•׳™׳•׳× ׳©׳׳•׳¨׳•׳×.</span>
     </footer>
 
     <div class="modal-backdrop" id="modalBackdrop" hidden>
@@ -89,7 +87,7 @@
         aria-labelledby="modalTitle"
         tabindex="-1"
       >
-        <button class="close-button" id="closeModal" type="button" aria-label="סגור פרטי מנה">
+        <button class="close-button" id="closeModal" type="button" aria-label="׳¡׳’׳•׳¨ ׳₪׳¨׳˜׳™ ׳׳ ׳”">
           &times;
         </button>
         <img id="modalImage" src="" alt="" />
@@ -99,7 +97,6 @@
           <p id="modalDescription"></p>
           <div class="modal-meta">
             <strong id="modalPrice"></strong>
-            <span id="modalBadge"></span>
           </div>
         </div>
       </article>

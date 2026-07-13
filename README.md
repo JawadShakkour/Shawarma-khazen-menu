@@ -39,10 +39,3 @@ Important limitation: the very first QR scan still needs a reachable URL. For a 
 
 If you need the first scan to work with no internet at all, the restaurant must provide a local network option, such as a small computer/tablet/router hosting the menu and a QR code pointing to that local address. Customers would need to connect to that restaurant Wi-Fi first.
 
-## Admin Page
-
-Open `/admin.html` on the live site to add menu items from the browser.
-
-The admin page needs a GitHub token with read/write access to repository contents. Pressing **Add to pending list** only saves the dish on the admin screen. Pressing **Push changes** uploads the image to `images/`, updates `data/menu.js`, commits to GitHub, and Netlify deploys automatically.
-
-Do not share the GitHub token with customers or staff who should not be able to edit the menu.

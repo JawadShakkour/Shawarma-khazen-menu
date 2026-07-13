@@ -1,4 +1,5 @@
 const activeMenuItems = typeof menuItems === "undefined" ? [] : menuItems;
+const activeMenuCategories = typeof menuCategories === "undefined" ? [] : menuCategories;
 
 const uiText = {
   he: {
@@ -18,8 +19,7 @@ const uiText = {
     searchLabel: "חיפוש בתפריט",
     emptyTitle: "לא נמצאו מנות.",
     emptyText: "נסה חיפוש אחר או בחר קטגוריה אחרת.",
-    footerPhone: "טלפון: +000 000 0000",
-    footerAddress: "כתובת: כתובת המסעדה",
+    footerPhone: "טלפון: 049555237",
     footerCopyright: "© 2026 Shawarma Khazen. כל הזכויות שמורות.",
     closeModal: "סגור פרטי מנה",
     viewItem: "פתח פרטי מנה",
@@ -34,15 +34,14 @@ const uiText = {
     priceComingSoon: "سيتم تحديث السعر قريبًا",
     searchPlaceholder: "ابحث عن شاورما، مشروبات...",
     heroEyebrow: "شاورما طازجة على النار",
-    heroDescription: "منيو رقمي لشاورما خازن مع وجبات طازجة، صور وأسعار.",
+    heroDescription: "قائمة رقمية لشاورما خازن مع وجبات طازجة، صور وأسعار.",
     hours: "مفتوح اليوم: 11:00 - 23:00",
-    menuEyebrow: "منيو QR",
-    menuTitle: "المنيو",
-    searchLabel: "بحث في المنيو",
+    menuEyebrow: "القائمة QR",
+    menuTitle: "القائمة",
+    searchLabel: "بحث في القائمة",
     emptyTitle: "لم يتم العثور على أصناف.",
     emptyText: "جرّب بحثًا آخر أو اختر فئة مختلفة.",
-    footerPhone: "هاتف: +000 000 0000",
-    footerAddress: "العنوان: عنوان المطعم",
+    footerPhone: "هاتف: 049555237",
     footerCopyright: "© 2026 Shawarma Khazen. جميع الحقوق محفوظة.",
     closeModal: "إغلاق تفاصيل الصنف",
     viewItem: "عرض تفاصيل الصنف",
@@ -64,8 +63,7 @@ const uiText = {
     searchLabel: "Search menu",
     emptyTitle: "No menu items found.",
     emptyText: "Try another search or choose a different category.",
-    footerPhone: "Phone: +000 000 0000",
-    footerAddress: "Address: Restaurant address",
+    footerPhone: "Phone: 049555237",
     footerCopyright: "© 2026 Shawarma Khazen. All rights reserved.",
     closeModal: "Close item details",
     viewItem: "View item details",
@@ -78,6 +76,12 @@ const state = {
   query: "",
 };
 
+const restaurantNames = {
+  he: "שווארמה חאזן",
+  ar: "شاورما خازن",
+  en: "Shawarma Khazen",
+};
+
 const categoryBar = document.querySelector("#categoryBar");
 const menuGrid = document.querySelector("#menuGrid");
 const searchInput = document.querySelector("#searchInput");
@@ -88,7 +92,13 @@ const modal = modalBackdrop.querySelector(".modal");
 const closeModalButton = document.querySelector("#closeModal");
 const languageButtons = document.querySelectorAll("[data-language]");
 
-const categories = ["all", ...new Set(activeMenuItems.map((item) => item.categoryKey))];
+const categories = [
+  "all",
+  ...new Set([
+    ...activeMenuCategories.map((category) => category.key),
+    ...activeMenuItems.map((item) => item.categoryKey),
+  ]),
+];
 
 function translate(value) {
   if (typeof value === "string") return value;
@@ -102,6 +112,8 @@ function formatPrice(item) {
 
 function getCategoryLabel(categoryKey) {
   if (categoryKey === "all") return uiText[state.language].all;
+  const category = activeMenuCategories.find((menuCategory) => menuCategory.key === categoryKey);
+  if (category) return translate(category.name);
   const item = activeMenuItems.find((menuItem) => menuItem.categoryKey === categoryKey);
   return translate(item?.category) || categoryKey;
 }
@@ -115,6 +127,10 @@ function updateStaticText() {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     element.textContent = uiText[state.language][key];
+  });
+
+  document.querySelectorAll("[data-restaurant-name]").forEach((element) => {
+    element.textContent = restaurantNames[state.language];
   });
 
   languageButtons.forEach((button) => {
@@ -148,6 +164,7 @@ function getFilteredItems() {
       !query ||
       Object.values(item.name).some((name) => name.toLowerCase().includes(query)) ||
       Object.values(item.description).some((description) => description.toLowerCase().includes(query)) ||
+      (item.note && Object.values(item.note).some((note) => note.toLowerCase().includes(query))) ||
       Object.values(item.category).some((category) => category.toLowerCase().includes(query));
 
     return categoryMatch && queryMatch;
@@ -165,15 +182,13 @@ function renderMenu() {
           <span class="card-body">
             <span class="card-topline">
               <span class="pill">${translate(item.category)}</span>
-              ${item.badge ? `<span class="badge ${item.spicy ? "spicy" : ""}">${translate(item.badge)}</span>` : ""}
             </span>
             <span>
               <h3>${translate(item.name)}</h3>
-              <p>${translate(item.description)}</p>
+              ${item.categoryKey === "comboMeals" && item.note ? `<p class="item-note">${translate(item.note)}</p>` : ""}
             </span>
             <span class="card-footer">
               <span class="price">${formatPrice(item)}</span>
-              <span class="availability">${item.available ? uiText[state.language].available : uiText[state.language].unavailable}</span>
             </span>
           </span>
         </button>
@@ -192,9 +207,10 @@ function openModal(item) {
   document.querySelector("#modalImage").alt = translate(item.name);
   document.querySelector("#modalCategory").textContent = translate(item.category);
   document.querySelector("#modalTitle").textContent = translate(item.name);
-  document.querySelector("#modalDescription").textContent = translate(item.fullDescription);
+  document.querySelector("#modalDescription").textContent = item.note
+    ? `${translate(item.fullDescription)} ${translate(item.note)}`
+    : translate(item.fullDescription);
   document.querySelector("#modalPrice").textContent = formatPrice(item);
-  document.querySelector("#modalBadge").textContent = item.badge ? translate(item.badge) : uiText[state.language].fresh;
 
   modalBackdrop.hidden = false;
   document.body.style.overflow = "hidden";
