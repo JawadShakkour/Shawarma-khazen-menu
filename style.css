@@ -82,7 +82,6 @@ img {
   width: 44px;
 }
 
-.language-button,
 .category-button,
 .close-button {
   background: var(--surface-color);
@@ -90,10 +89,28 @@ img {
   color: var(--text-color);
 }
 
-.language-button {
+.language-switcher {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
   border-radius: 999px;
+  display: inline-flex;
+  gap: 0.2rem;
+  padding: 0.2rem;
+}
+
+.language-button {
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  color: var(--text-color);
+  font-weight: 800;
   min-height: 42px;
-  padding: 0 1rem;
+  padding: 0 0.8rem;
+}
+
+.language-button[aria-pressed="true"] {
+  background: var(--primary-color);
+  color: white;
 }
 
 .hero {
@@ -238,6 +255,10 @@ h2 {
   width: 100%;
 }
 
+[dir="rtl"] .menu-card {
+  text-align: right;
+}
+
 .menu-card:hover {
   box-shadow: var(--shadow);
   transform: translateY(-3px);
@@ -302,6 +323,7 @@ h2 {
   color: var(--primary-dark);
   font-size: 1.1rem;
   font-weight: 900;
+  overflow-wrap: anywhere;
 }
 
 .availability {
@@ -385,7 +407,18 @@ h2 {
   width: 44px;
 }
 
+[dir="rtl"] .close-button {
+  left: 0.75rem;
+  right: auto;
+}
+
 @media (max-width: 720px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
   .menu-heading {
     align-items: stretch;
     grid-template-columns: 1fr;
