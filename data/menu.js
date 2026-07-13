@@ -138,5 +138,40 @@ const menuItems = [
     "available": true,
     "vegetarian": false,
     "spicy": false
+  },
+  {
+    "id": 5,
+    "name": {
+      "he": "פגט שווארמה הודו",
+      "ar": "باغيت شاورما حبش",
+      "en": "Turkey Shawarma Baguette"
+    },
+    "description": {
+      "he": "פגט שווארמה הודו",
+      "ar": "باغيت شاورما حبش",
+      "en": "Turkey Shawarma Baguette"
+    },
+    "fullDescription": {
+      "he": "פגט שווארמה הודו",
+      "ar": "باغيت شاورما حبش",
+      "en": "Turkey Shawarma Baguette"
+    },
+    "price": 60,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/turkey-shawarma-baguette-1783951524185.jpeg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
   }
 ];
