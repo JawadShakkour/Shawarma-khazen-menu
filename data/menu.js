@@ -470,7 +470,7 @@ const menuItems = [
       "ar": "بيتا شاورما مكس عجل وخروف",
       "en": "Veal and Lamb Shawarma Pita"
     },
-    "price": 65,
+    "price": 67,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -505,7 +505,7 @@ const menuItems = [
       "ar": "باغيت شاورما مكس عجل وخروف",
       "en": "Veal and Lamb Shawarma Baguette"
     },
-    "price": 70,
+    "price": 72,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -540,7 +540,7 @@ const menuItems = [
       "ar": "لفة شاورما مكس عجل وخروف",
       "en": "Veal and Lamb Shawarma Laffa"
     },
-    "price": 70,
+    "price": 72,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -1540,7 +1540,7 @@ const menuItems = [
       "ar": "وجبة عمل باغيت شاورما مكس عجل وخروف",
       "en": "Veal and Lamb Shawarma Baguette Combo Meal"
     },
-    "price": 85,
+    "price": 87,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -1580,7 +1580,7 @@ const menuItems = [
       "ar": "وجبة عمل لفة شاورما مكس عجل وخروف",
       "en": "Veal and Lamb Shawarma Laffa Combo Meal"
     },
-    "price": 85,
+    "price": 87,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -2194,3 +2194,4 @@ const menuItems = [
     "spicy": false
   }
 ];
+
