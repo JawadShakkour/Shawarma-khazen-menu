@@ -43,7 +43,7 @@ const menuItems = [
       "ar": "بيتا طازجة محشوة بشاورما عجل، سلطات وإضافات حسب الاختيار.",
       "en": "Fresh pita filled with veal shawarma, salads, and toppings of your choice."
     },
-    "price": 55,
+    "price": 57,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -78,7 +78,7 @@ const menuItems = [
       "ar": "باغيت طازج محشو بشاورما عجل، سلطات وإضافات حسب الاختيار.",
       "en": "Fresh baguette filled with veal shawarma, salads, and toppings of your choice."
     },
-    "price": 60,
+    "price": 62,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -113,7 +113,7 @@ const menuItems = [
       "ar": "لفة شاورما عجل",
       "en": "Veal Shawarma Laffa"
     },
-    "price": 60,
+    "price": 62,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -148,7 +148,7 @@ const menuItems = [
       "ar": "بيتا شاورما حبش",
       "en": "Turkey Shawarma Pita"
     },
-    "price": 55,
+    "price": 57,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -183,7 +183,7 @@ const menuItems = [
       "ar": "باغيت شاورما حبش",
       "en": "Turkey Shawarma Baguette"
     },
-    "price": 60,
+    "price": 62,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -218,7 +218,7 @@ const menuItems = [
       "ar": "لفة شاورما حبش",
       "en": "Turkey Shawarma Laffa"
     },
-    "price": 60,
+    "price": 62,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -253,7 +253,7 @@ const menuItems = [
       "ar": "بيتا شاورما خروف",
       "en": "Lamb Shawarma Pita"
     },
-    "price": 75,
+    "price": 77,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -288,7 +288,7 @@ const menuItems = [
       "ar": "باغيت شاورما خروف",
       "en": "Lamb Shawarma Baguette"
     },
-    "price": 80,
+    "price": 82,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -323,7 +323,7 @@ const menuItems = [
       "ar": "لفة شاورما خروف",
       "en": "Lamb Shawarma Laffa"
     },
-    "price": 80,
+    "price": 82,
     "currency": "₪",
     "categoryKey": "normalDishes",
     "category": {
@@ -783,7 +783,7 @@ const menuItems = [
       "ar": "وجبة عمل بيتا شاورما عجل",
       "en": "Veal Shawarma Pita Combo Meal"
     },
-    "price": 70,
+    "price": 72,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -823,7 +823,7 @@ const menuItems = [
       "ar": "وجبة عمل باغيت شاورما عجل",
       "en": "Veal Shawarma Baguette Combo Meal"
     },
-    "price": 75,
+    "price": 77,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -863,7 +863,7 @@ const menuItems = [
       "ar": "وجبة عمل لفة شاورما عجل",
       "en": "Veal Shawarma Laffa Combo Meal"
     },
-    "price": 75,
+    "price": 77,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -903,7 +903,7 @@ const menuItems = [
       "ar": "وجبة عمل بيتا شاورما حبش",
       "en": "Turkey Shawarma Pita Combo Meal"
     },
-    "price": 70,
+    "price": 72,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -943,7 +943,7 @@ const menuItems = [
       "ar": "وجبة عمل باغيت شاورما حبش",
       "en": "Turkey Shawarma Baguette Combo Meal"
     },
-    "price": 75,
+    "price": 77,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -983,7 +983,7 @@ const menuItems = [
       "ar": "وجبة عمل لفة شاورما حبش",
       "en": "Turkey Shawarma Laffa Combo Meal"
     },
-    "price": 75,
+    "price": 77,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -1023,7 +1023,7 @@ const menuItems = [
       "ar": "وجبة عمل بيتا شاورما خروف",
       "en": "Lamb Shawarma Pita Combo Meal"
     },
-    "price": 90,
+    "price": 92,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -1063,7 +1063,7 @@ const menuItems = [
       "ar": "وجبة عمل باغيت شاورما خروف",
       "en": "Lamb Shawarma Baguette Combo Meal"
     },
-    "price": 95,
+    "price": 97,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
@@ -1103,7 +1103,7 @@ const menuItems = [
       "ar": "وجبة عمل لفة شاورما خروف",
       "en": "Lamb Shawarma Laffa Combo Meal"
     },
-    "price": 95,
+    "price": 97,
     "currency": "₪",
     "categoryKey": "comboMeals",
     "category": {
