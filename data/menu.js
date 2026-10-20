@@ -8,6 +8,14 @@ const menuCategories = [
     }
   },
   {
+    "key": "plates",
+    "name": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    }
+  },
+  {
     "key": "comboMeals",
     "name": {
       "he": "מנות עסקיות",
@@ -24,7 +32,6 @@ const menuCategories = [
     }
   }
 ];
-
 const menuItems = [
   {
     "id": 1,
@@ -757,6 +764,356 @@ const menuItems = [
       "en": "Normal dishes"
     },
     "image": "images/schnitzel-laffa.png",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 50,
+    "name": {
+      "he": "צלחת שווארמה עגל אישית",
+      "ar": "طبق شاورما عجل فردي",
+      "en": "Personal Veal Shawarma Plate"
+    },
+    "description": {
+      "he": "צלחת אישית עם שווארמה עגל.",
+      "ar": "طبق فردي مع شاورما العجل.",
+      "en": "An individual plate of veal shawarma."
+    },
+    "fullDescription": {
+      "he": "מנה אישית של שווארמה עגל, מוגשת בצלחת.",
+      "ar": "حصة فردية من شاورما العجل، تقدم في طبق.",
+      "en": "An individual serving of veal shawarma, served on a plate."
+    },
+    "price": 90,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-veal-personal.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 51,
+    "name": {
+      "he": "צלחת שווארמה הודו אישית",
+      "ar": "طبق شاورما حبش فردي",
+      "en": "Personal Turkey Shawarma Plate"
+    },
+    "description": {
+      "he": "צלחת אישית עם שווארמה הודו.",
+      "ar": "طبق فردي مع شاورما الحبش.",
+      "en": "An individual plate of turkey shawarma."
+    },
+    "fullDescription": {
+      "he": "מנה אישית של שווארמה הודו, מוגשת בצלחת.",
+      "ar": "حصة فردية من شاورما الحبش، تقدم في طبق.",
+      "en": "An individual serving of turkey shawarma, served on a plate."
+    },
+    "price": 90,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-turkey-personal.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 52,
+    "name": {
+      "he": "צלחת שווארמה כבש אישית",
+      "ar": "طبق شاورما خروف فردي",
+      "en": "Personal Lamb Shawarma Plate"
+    },
+    "description": {
+      "he": "צלחת אישית עם שווארמה כבש.",
+      "ar": "طبق فردي مع شاورما الخروف.",
+      "en": "An individual plate of lamb shawarma."
+    },
+    "fullDescription": {
+      "he": "מנה אישית של שווארמה כבש, מוגשת בצלחת.",
+      "ar": "حصة فردية من شاورما الخروف، تقدم في طبق.",
+      "en": "An individual serving of lamb shawarma, served on a plate."
+    },
+    "price": 110,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-lamb-personal.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 53,
+    "name": {
+      "he": "צלחת מיקס אישית",
+      "ar": "طبق شاورما مكس فردي",
+      "en": "Personal Mixed Shawarma Plate"
+    },
+    "description": {
+      "he": "צלחת אישית עם שווארמה מיקס עגל וכבש.",
+      "ar": "طبق فردي مع مزيج من شاورما العجل والخروف.",
+      "en": "An individual plate with a mix of veal and lamb shawarma."
+    },
+    "fullDescription": {
+      "he": "מנה אישית של שווארמה מיקס עגל וכבש, מוגשת בצלחת.",
+      "ar": "حصة فردية من مزيج شاورما العجل والخروف، تقدم في طبق.",
+      "en": "An individual serving of mixed veal and lamb shawarma, served on a plate."
+    },
+    "price": 100,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-mix-personal.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 54,
+    "name": {
+      "he": "צלחת זוגית שווארמה עגל / הודו",
+      "ar": "طبق شاورما عجل أو حبش لشخصين",
+      "en": "Veal or Turkey Shawarma Platter for Two"
+    },
+    "description": {
+      "he": "צלחת זוגית עם שווארמה עגל או הודו, חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق لشخصين مع شاورما العجل أو الحبش، وحمص وسلطات وبطاطا مقلية.",
+      "en": "A platter for two with veal or turkey shawarma, hummus, salads, and fries."
+    },
+    "fullDescription": {
+      "he": "צלחת לשני סועדים עם שווארמה עגל או הודו, כולל חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق لشخصين مع شاورما العجل أو الحبش، ويشمل حمصًا وسلطات وبطاطا مقلية.",
+      "en": "A platter for two with veal or turkey shawarma, including hummus, salads, and fries."
+    },
+    "price": 200,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-veal-couple.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 55,
+    "name": {
+      "he": "צלחת מיקס זוגית",
+      "ar": "طبق شاورما مكس لشخصين",
+      "en": "Mixed Shawarma Platter for Two"
+    },
+    "description": {
+      "he": "צלחת זוגית עם שווארמה מיקס, חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق لشخصين مع شاورما مكس، وحمص وسلطات وبطاطا مقلية.",
+      "en": "A platter for two with mixed shawarma, hummus, salads, and fries."
+    },
+    "fullDescription": {
+      "he": "צלחת לשני סועדים עם שווארמה מיקס עגל וכבש, כולל חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق لشخصين مع مزيج شاورما العجل والخروف، ويشمل حمصًا وسلطات وبطاطا مقلية.",
+      "en": "A platter for two with mixed veal and lamb shawarma, including hummus, salads, and fries."
+    },
+    "price": 220,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-mix-couple.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 56,
+    "name": {
+      "he": "צלחת זוגית שווארמה כבש",
+      "ar": "طبق شاورما خروف لشخصين",
+      "en": "Lamb Shawarma Platter for Two"
+    },
+    "description": {
+      "he": "צלחת זוגית עם שווארמה כבש, חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق لشخصين مع شاورما الخروف، وحمص وسلطات وبطاطا مقلية.",
+      "en": "A platter for two with lamb shawarma, hummus, salads, and fries."
+    },
+    "fullDescription": {
+      "he": "צלחת לשני סועדים עם שווארמה כבש, כולל חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق لشخصين مع شاورما الخروف، ويشمل حمصًا وسلطات وبطاطا مقلية.",
+      "en": "A platter for two with lamb shawarma, including hummus, salads, and fries."
+    },
+    "price": 240,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-lamb-couple.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 57,
+    "name": {
+      "he": "צלחת שווארמה עגל / הודו לשלושה סועדים",
+      "ar": "طبق شاورما عجل أو حبش لثلاثة أشخاص",
+      "en": "Veal or Turkey Shawarma Platter for Three"
+    },
+    "description": {
+      "he": "צלחת שווארמה עגל או הודו לשלושה סועדים, עם חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق شاورما العجل أو الحبش لثلاثة أشخاص، مع حمص وسلطات وبطاطا مقلية.",
+      "en": "A veal or turkey shawarma platter for three, with hummus, salads, and fries."
+    },
+    "fullDescription": {
+      "he": "צלחת גדולה לשלושה סועדים עם שווארמה עגל או הודו, כולל חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق كبير لثلاثة أشخاص مع شاورما العجل أو الحبش، ويشمل حمصًا وسلطات وبطاطا مقلية.",
+      "en": "A large platter for three with veal or turkey shawarma, including hummus, salads, and fries."
+    },
+    "price": 290,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-veal-three.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 58,
+    "name": {
+      "he": "צלחת מיקס לשלושה סועדים",
+      "ar": "طبق شاورما مكس لثلاثة أشخاص",
+      "en": "Mixed Shawarma Platter for Three"
+    },
+    "description": {
+      "he": "צלחת שווארמה מיקס לשלושה סועדים, עם חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق شاورما مكس لثلاثة أشخاص، مع حمص وسلطات وبطاطا مقلية.",
+      "en": "A mixed shawarma platter for three, with hummus, salads, and fries."
+    },
+    "fullDescription": {
+      "he": "צלחת גדולה לשלושה סועדים עם שווארמה מיקס עגל וכבש, כולל חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق كبير لثلاثة أشخاص مع مزيج شاورما العجل والخروف، ويشمل حمصًا وسلطات وبطاطا مقلية.",
+      "en": "A large platter for three with mixed veal and lamb shawarma, including hummus, salads, and fries."
+    },
+    "price": 320,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-mix-three.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 59,
+    "name": {
+      "he": "צלחת שווארמה כבש לשלושה סועדים",
+      "ar": "طبق شاورما خروف لثلاثة أشخاص",
+      "en": "Lamb Shawarma Platter for Three"
+    },
+    "description": {
+      "he": "צלחת שווארמה כבש לשלושה סועדים, עם חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق شاورما الخروف لثلاثة أشخاص، مع حمص وسلطات وبطاطا مقلية.",
+      "en": "A lamb shawarma platter for three, with hummus, salads, and fries."
+    },
+    "fullDescription": {
+      "he": "צלחת גדולה לשלושה סועדים עם שווארמה כבש, כולל חומוס, סלטים וצ׳יפס.",
+      "ar": "طبق كبير لثلاثة أشخاص مع شاورما الخروف، ويشمل حمصًا وسلطات وبطاطا مقلية.",
+      "en": "A large platter for three with lamb shawarma, including hummus, salads, and fries."
+    },
+    "price": 350,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/shawarma-plate-lamb-three.jpg",
     "badge": {
       "he": "חדש",
       "ar": "جديد",
