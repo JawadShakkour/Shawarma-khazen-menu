@@ -774,6 +774,251 @@ const menuItems = [
     "spicy": false
   },
   {
+    "id": 60,
+    "name": {
+      "he": "פיתה חזה עוף",
+      "ar": "بيتا صدر دجاج مشوي",
+      "en": "Grilled Chicken Breast Pita"
+    },
+    "description": {
+      "he": "פיתה עם חזה עוף צלוי, סלטים ותוספות.",
+      "ar": "بيتا محشوة بصدر دجاج مشوي، مع سلطات وإضافات.",
+      "en": "Pita with grilled chicken breast, salads, and toppings."
+    },
+    "fullDescription": {
+      "he": "פיתה עם חזה עוף צלוי, סלטים ותוספות.",
+      "ar": "بيتا محشوة بصدر دجاج مشوي، مع سلطات وإضافات.",
+      "en": "Pita with grilled chicken breast, salads, and toppings."
+    },
+    "price": 50,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/chicken-breast-pita-generated.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 61,
+    "name": {
+      "he": "לפה חזה עוף",
+      "ar": "لفة صدر دجاج مشوي",
+      "en": "Grilled Chicken Breast Laffa"
+    },
+    "description": {
+      "he": "לפה עם חזה עוף צלוי, סלטים ותוספות.",
+      "ar": "لفة محشوة بصدر دجاج مشوي، مع سلطات وإضافات.",
+      "en": "Laffa with grilled chicken breast, salads, and toppings."
+    },
+    "fullDescription": {
+      "he": "לפה עם חזה עוף צלוי, סלטים ותוספות.",
+      "ar": "لفة محشوة بصدر دجاج مشوي، مع سلطات وإضافات.",
+      "en": "Laffa with grilled chicken breast, salads, and toppings."
+    },
+    "price": 55,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/chicken-breast-laffa-generated.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 62,
+    "name": {
+      "he": "באגט חזה עוף",
+      "ar": "باغيت صدر دجاج مشوي",
+      "en": "Grilled Chicken Breast Baguette"
+    },
+    "description": {
+      "he": "באגט עם חזה עוף צלוי, סלטים ותוספות.",
+      "ar": "باغيت محشو بصدر دجاج مشوي، مع سلطات وإضافات.",
+      "en": "Baguette with grilled chicken breast, salads, and toppings."
+    },
+    "fullDescription": {
+      "he": "באגט עם חזה עוף צלוי, סלטים ותוספות.",
+      "ar": "باغيت محشو بصدر دجاج مشوي، مع سلطات وإضافات.",
+      "en": "Baguette with grilled chicken breast, salads, and toppings."
+    },
+    "price": 55,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/chicken-breast-baguette-generated.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 63,
+    "name": {
+      "he": "פיתה פרגית",
+      "ar": "بيتا فخذ دجاج مشوي",
+      "en": "Grilled Chicken Thigh Pita"
+    },
+    "description": {
+      "he": "פיתה עם פרגית צלויה, סלטים ותוספות.",
+      "ar": "بيتا مع فخذ دجاج مشوي، سلطات وإضافات.",
+      "en": "Pita with grilled chicken thigh (pargit), salads, and toppings."
+    },
+    "fullDescription": {
+      "he": "פיתה עם פרגית צלויה, סלטים ותוספות.",
+      "ar": "بيتا مع فخذ دجاج مشوي، سلطات وإضافات.",
+      "en": "Pita with grilled chicken thigh (pargit), salads, and toppings."
+    },
+    "price": 50,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/pargit-pita-generated.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 64,
+    "name": {
+      "he": "לפה פרגית",
+      "ar": "لفة فخذ دجاج مشوي",
+      "en": "Grilled Chicken Thigh Laffa"
+    },
+    "description": {
+      "he": "לפה עם פרגית צלויה, סלטים ותוספות.",
+      "ar": "لفة مع فخذ دجاج مشوي، سلطات وإضافات.",
+      "en": "Laffa with grilled chicken thigh (pargit), salads, and toppings."
+    },
+    "fullDescription": {
+      "he": "לפה עם פרגית צלויה, סלטים ותוספות.",
+      "ar": "لفة مع فخذ دجاج مشوي، سلطات وإضافات.",
+      "en": "Laffa with grilled chicken thigh (pargit), salads, and toppings."
+    },
+    "price": 55,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/pargit-laffa-generated.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 65,
+    "name": {
+      "he": "באגט פרגית",
+      "ar": "باغيت فخذ دجاج مشوي",
+      "en": "Grilled Chicken Thigh Baguette"
+    },
+    "description": {
+      "he": "באגט עם פרגית צלויה, סלטים ותוספות.",
+      "ar": "باغيت مع فخذ دجاج مشوي، سلطات وإضافات.",
+      "en": "Baguette with grilled chicken thigh (pargit), salads, and toppings."
+    },
+    "fullDescription": {
+      "he": "באגט עם פרגית צלויה, סלטים ותוספות.",
+      "ar": "باغيت مع فخذ دجاج مشوي، سلطات وإضافات.",
+      "en": "Baguette with grilled chicken thigh (pargit), salads, and toppings."
+    },
+    "price": 55,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/pargit-baguette-generated.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 66,
+    "name": {
+      "he": "המבורגר 220 גרם עם צ׳יפס",
+      "ar": "هامبرغر 220 غرام مع بطاطا مقلية",
+      "en": "220g Hamburger with Fries"
+    },
+    "description": {
+      "he": "המבורגר במשקל 220 גרם, מוגש עם צ׳יפס.",
+      "ar": "هامبرغر بوزن 220 غرام، يُقدّم مع البطاطا المقلية.",
+      "en": "A 220g hamburger served with fries."
+    },
+    "fullDescription": {
+      "he": "המבורגר במשקל 220 גרם, מוגש עם צ׳יפס.",
+      "ar": "هامبرغر بوزن 220 غرام، يُقدّم مع البطاطا المقلية.",
+      "en": "A 220g hamburger served with fries."
+    },
+    "price": 50,
+    "currency": "₪",
+    "categoryKey": "normalDishes",
+    "category": {
+      "he": "מנות רגילות",
+      "ar": "أطباق عادية",
+      "en": "Normal dishes"
+    },
+    "image": "images/hamburger-220g-fries-generated.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
     "id": 50,
     "name": {
       "he": "צלחת שווארמה עגל אישית",
@@ -1114,6 +1359,76 @@ const menuItems = [
       "en": "Platters"
     },
     "image": "images/shawarma-plate-lamb-three.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 67,
+    "name": {
+      "he": "צלחת חזה עוף",
+      "ar": "طبق صدر دجاج مشوي",
+      "en": "Grilled Chicken Breast Plate"
+    },
+    "description": {
+      "he": "צלחת חזה עוף צלוי, מוגשת עם סלטים וצ׳יפס.",
+      "ar": "طبق صدر دجاج مشوي، يُقدّم مع السلطات والبطاطا المقلية.",
+      "en": "Grilled chicken breast served with salads and fries."
+    },
+    "fullDescription": {
+      "he": "צלחת חזה עוף צלוי, מוגשת עם סלטים וצ׳יפס.",
+      "ar": "طبق صدر دجاج مشوي، يُقدّم مع السلطات والبطاطا المقلية.",
+      "en": "Grilled chicken breast served with salads and fries."
+    },
+    "price": 90,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/chicken-breast-plate-generated.jpg",
+    "badge": {
+      "he": "חדש",
+      "ar": "جديد",
+      "en": "New"
+    },
+    "available": true,
+    "vegetarian": false,
+    "spicy": false
+  },
+  {
+    "id": 68,
+    "name": {
+      "he": "צלחת פרגית",
+      "ar": "طبق فخذ دجاج مشوي",
+      "en": "Grilled Chicken Thigh Plate"
+    },
+    "description": {
+      "he": "צלחת פרגית צלויה, מוגשת עם סלטים וצ׳יפס.",
+      "ar": "طبق فخذ دجاج مشوي، يُقدّم مع السلطات والبطاطا المقلية.",
+      "en": "Grilled chicken thigh (pargit) served with salads and fries."
+    },
+    "fullDescription": {
+      "he": "צלחת פרגית צלויה, מוגשת עם סלטים וצ׳יפס.",
+      "ar": "طبق فخذ دجاج مشوي، يُقدّم مع السلطات والبطاطا المقلية.",
+      "en": "Grilled chicken thigh (pargit) served with salads and fries."
+    },
+    "price": 90,
+    "currency": "₪",
+    "categoryKey": "plates",
+    "category": {
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
+    },
+    "image": "images/pargit-plate-generated.jpg",
     "badge": {
       "he": "חדש",
       "ar": "جديد",
@@ -2194,4 +2509,3 @@ const menuItems = [
     "spicy": false
   }
 ];
-

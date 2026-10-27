@@ -1,4 +1,4 @@
-const CACHE_NAME = "shawarma-khazen-menu-v21";
+const CACHE_NAME = "shawarma-khazen-menu-v22";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -59,6 +59,15 @@ const CORE_ASSETS = [
   "./images/prigat-lemon-mint-juice.png",
   "./images/soda-water.png",
   "./images/mineral-water.png",
+  "./images/chicken-breast-pita-generated.jpg",
+  "./images/chicken-breast-laffa-generated.jpg",
+  "./images/chicken-breast-baguette-generated.jpg",
+  "./images/pargit-pita-generated.jpg",
+  "./images/pargit-laffa-generated.jpg",
+  "./images/pargit-baguette-generated.jpg",
+  "./images/hamburger-220g-fries-generated.jpg",
+  "./images/chicken-breast-plate-generated.jpg",
+  "./images/pargit-plate-generated.jpg",
   "./manifest.webmanifest",
 ];
 
