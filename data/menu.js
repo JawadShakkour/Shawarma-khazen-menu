@@ -577,11 +577,11 @@ const menuItems = [
     },
     "price": 20,
     "currency": "₪",
-    "categoryKey": "normalDishes",
+    "categoryKey": "plates",
     "category": {
-      "he": "מנות רגילות",
-      "ar": "أطباق عادية",
-      "en": "Normal dishes"
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
     },
     "image": "images/hummus-plate.png",
     "badge": {
@@ -612,11 +612,11 @@ const menuItems = [
     },
     "price": 20,
     "currency": "₪",
-    "categoryKey": "normalDishes",
+    "categoryKey": "plates",
     "category": {
-      "he": "מנות רגילות",
-      "ar": "أطباق عادية",
-      "en": "Normal dishes"
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
     },
     "image": "images/tahini-plate.png",
     "badge": {
@@ -652,11 +652,11 @@ const menuItems = [
     },
     "price": 20,
     "currency": "₪",
-    "categoryKey": "normalDishes",
+    "categoryKey": "plates",
     "category": {
-      "he": "מנות רגילות",
-      "ar": "أطباق عادية",
-      "en": "Normal dishes"
+      "he": "צלחות",
+      "ar": "أطباق",
+      "en": "Platters"
     },
     "image": "images/french-fries-plate.png",
     "badge": {
